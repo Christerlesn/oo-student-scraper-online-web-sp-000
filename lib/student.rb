@@ -13,7 +13,7 @@ class Student
 
 
   def self.create_from_collection(students_array)
-    binding.pry
+
     Scraper.scrape_index_page(students_array).each {|student| student = Student.new(name, location)}
   end
 
