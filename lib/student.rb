@@ -12,7 +12,7 @@ class Student
 
 
   def self.create_from_collection(students_array)
-    atudents_array = Scraper.scrape_index_page
+    Scraper.scrape_index_page(students_array)
   end
 
   def add_student_attributes(attributes_hash)
