@@ -4,9 +4,10 @@ class Student
 
   @@all = []
 #student_hash
-  def initialize(name:, location:)
-    @name = name
-    @location = location
+  def initialize(student_hash)
+    self.send("name=", student_hash[:name])
+    self.send("location=", student_hash[:location])
+    self.send("profile_url=", student_hash[:profile_url])
     @@all << self
   end
 
