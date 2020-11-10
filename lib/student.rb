@@ -12,7 +12,7 @@ class Student
 
 
   def self.create_from_collection(students_array)
-    students_array = Student.new(name:, location:)
+    students_array = Student.new(name, location)
     Scraper.scrape_index_page(students_array)
   end
 
