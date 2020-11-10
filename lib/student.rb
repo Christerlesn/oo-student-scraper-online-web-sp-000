@@ -12,11 +12,11 @@ class Student
 
 
   def self.create_from_collection(students_array)
-
+    students_array = Student.new(name:, location:)
   end
 
   def add_student_attributes(attributes_hash)
-
+    Scraper.scrape_profile_page(attributes_hash)
   end
 
   def self.all
